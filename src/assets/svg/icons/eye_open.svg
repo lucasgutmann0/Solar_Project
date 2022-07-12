@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="240" height="240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="a">
+      <stop style="stop-opacity: 1; stop-color: rgb(245, 158, 11);" offset="0"/>
+      <stop style="stop-opacity: 1; stop-color: rgb(180, 83, 9);" offset="1"/>
+    </linearGradient>
+    <linearGradient id="b" x1="120" y1="96.479" x2="120" y2="143.521" gradientUnits="userSpaceOnUse" gradientTransform="translate(-1.892 -1.892) scale(1.01567)" xlink:href="#a"/>
+  </defs>
+  <path style="fill: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(245, 158, 11); stroke-width: 12px;" d="M16.395 119.989s46.027-54.683 103.593-54.683 105.03 54.683 105.03 54.683-39.095 56.14-105.03 56.14c-65.934 0-103.593-56.14-103.593-56.14z"/>
+  <circle style="opacity: 1; fill: none; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(245, 158, 11); stroke-width: 12px;" cx="119.988" cy="119.989" r="54.683"/>
+  <circle style="opacity:1;fill:url(#b);fill-opacity:1;stroke:none;stroke-width:3.83876;stroke-dasharray:none;stroke-opacity:1" cx="119.988" cy="119.989" r="23.89"/>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="264.784" height="264.784" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter style="color-interpolation-filters:sRGB" id="a" x="-.027" y="-.027" width="1.055" height="1.06">
+      <feFlood flood-opacity=".423" flood-color="#000" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" stdDeviation=".2" result="blur"/>
+      <feOffset dy=".1" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+    </filter>
+  </defs>
+  <g style="display:inline;opacity:1" transform="translate(-68.832 -69.784) scale(.98855)">
+    <circle cx="203.555" cy="204.517" r="133.925" style="fill-opacity: 1; stroke-width: 1.14061; fill: rgb(59, 130, 246);"/>
+    <path style="fill:#0d3953;fill-opacity:1;stroke:#f1bdbd;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1" d="M133.703 318.783s9.165-24.268 27.45-29.61c18.284-5.343 71.272-8.376 90.9 0 19.628 8.374 23.484 18.605 26.51 26.294-22.406 16.231-54.67 22.976-71.313 22.976-14.227 0-46.282-1.557-73.547-19.66z"/>
+    <path style="display:inline;opacity:.5;fill:#f8fefc;fill-opacity:1;stroke:none;stroke-width:1.01158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M177.94 286.015s26.508-5.088 29.895-4.912c3.388.176 30.75 4.912 30.75 4.912l-28.536 47.115-3.916.539z"/>
+    <g style="display:inline;opacity:1" class="UnoptimicedTransforms">
+      <path style="display:inline;opacity:1;fill:#f05757;stroke-width:1.01158;filter:url(#a)" d="M211.627 297.62a2.87 2.87 0 0 1 2.152 2.257l4.518 26.316-10.318 9.729-10.913-9.73 4.676-26.3s.129-1.687 2.325-2.117c-.012-.01 5.927-.542 7.56-.156z"/>
+      <path style="fill:#f05757;fill-opacity:1;stroke:none;stroke-width:1.01158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#a)" d="M207.837 281.771c-1.292 0-8.73 5.852-8.535 8.357.182 2.35 1.005 10.374 2.944 9.255 1.303-.555 2.714-.682 5.836-.682 3.27 0 4.537.127 5.84.682 1.94 1.12 2.762-6.905 2.944-9.255.195-2.505-7.736-8.357-9.029-8.357z" transform="translate(-.248 .108)"/>
+    </g>
+    <path style="fill:#0b2e43;fill-opacity:1;stroke:#000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;filter:url(#a)" d="M161.152 289.172c6.98-3.318 14.442-5.597 22.63-6.312l23.768 50.65 25.191-51.304c6.91 1.362 13.263 3.853 19.312 6.966l-26.396 22.032 5.43 8.638-23.108 16.08-24.825-15.94 5.372-8.778z"/>
+    <path style="display:inline;opacity:1;fill:#f9b695;fill-opacity:1;stroke:none;stroke-width:1.01158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M207.298 125.109c-54.02 0-54.02 36.086-54.02 49.939v29.47s-12.064-.001-11.948 12.358c.116 12.36 15.413 10.81 15.413 10.81s3.179 10.475 11.186 22.888c8.008 12.414 26.337 16.526 26.337 16.526v9.65s8.654 4.376 13.222 4.35c4.568-.025 12.765-4.359 12.765-4.359v-9.65s18.329-4.111 26.337-16.525c8.007-12.413 11.186-22.889 11.186-22.889s15.3 1.558 15.415-10.801c.116-12.36-11.95-12.358-11.95-12.358v-29.47c0-14.561 0-48.536-53.943-49.94z"/>
+    <path style="fill:#fefffa;fill-opacity:1;stroke:none;stroke-width:1.01158;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1" d="M193.43 276.75a3.792 3.792 0 0 0-.67.065c-3.162.643-13.785 6.722-13.785 6.722 5.467 3.285 18.99 11.965 18.99 11.965-.138-.746-.736-2.005.175-3.513 2.577-4.266 8.386-10.104 9.448-10.11h.002c1.061.006 6.87 5.844 9.448 10.11.91 1.508.312 2.767.174 3.513 0 0 13.524-8.68 18.99-11.965 0 0-10.622-6.079-13.784-6.722-3.086-.627-14.281 3.45-14.828 3.65h-.002c-.513-.188-10.384-3.783-14.158-3.715z"/>
+    <path style="fill:#321000;fill-opacity:1;stroke:#321000;stroke-width:1.01158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m255.572 212.905 4.426-1.975s6.153-46.35 2.24-58.194c-3.914-11.844-8.353-20.53-16.511-25.135 0 0-2.52-24.35-22.239-32.237-15.243-6.097-43.57 0-43.57 0 5.186 1.835 7.535 3.953 10.34 7.183-23.78-1.662-34.113 19.632-34.113 19.632 6.427-2.223 9.017-2.745 13.068-2.584 0 0-19.519 11.092-20.387 27.616-.87 16.524 4.7 63.72 4.7 63.72l4.154 1.974s-2.387-27.286 5.664-43.735c8.052-16.448 19.486-26.149 43.916-26.149 24.427 0 37.532 8.356 43.8 26.15 6.268 17.793 4.512 43.734 4.512 43.734z"/>
+  </g>
+</svg>
