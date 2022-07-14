@@ -3,7 +3,6 @@ from django.db import models
 
 from simple_history.models import HistoricalRecords
 from apis.base.models import BaseModel
-from apis.clientes.models import Client
 
 # Create your models here.
 class Projects(BaseModel):

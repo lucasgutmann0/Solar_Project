@@ -5,17 +5,15 @@ from apis.clientes.api.serializers.client_serializer import ClientSerializer
 from apis.proyectos.models import Projects
 
 class ProjectSerializer(serializers.ModelSerializer):
-    # fk_clients = serializers.StringRelatedField()
-    
     class Meta:
         model = Projects
-        exclude = ['state']
+        exclude = ['status']
         
     def to_representation(self, instance):
         return {
             'id': instance.id,
             "fk_clients": instance.fk_clients.name,
-            "state": instance.state,
+            "status": instance.status,
             "creation_date": instance.creation_date,
             "installed_power": instance.installed_power,
             "address": instance.address,
