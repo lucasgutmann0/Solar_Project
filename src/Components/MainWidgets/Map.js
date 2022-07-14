@@ -12,7 +12,7 @@ export default function SimpleMap() {
 
   return (
     // Important! Always set the container height explicitly
-    <div className="rounded-xl bg-black drop-shadow-md" style={{ height: "50vh", width: "100%" }}>
+    <div className="rounded-xl bg-black drop-shadow-md h-10" style={{width: "100%" }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}

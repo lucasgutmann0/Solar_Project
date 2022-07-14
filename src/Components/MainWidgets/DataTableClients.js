@@ -106,16 +106,18 @@ const DataTableClients = () => {
 
   //4 - Mostramos la data en DataTable
   return (
-    <DataTable
-      title="Clientes"
-      columns={columns}
-      data={users}
-      customStyles={customStyles}
-      // expandableRows
-      // expandableRowsComponent={ExpandedComponent}
-      pagination
-      selectableRows
-    />
+    <div className="">
+      <DataTable
+        title="Clientes"
+        columns={columns}
+        data={users}
+        customStyles={customStyles}
+        // expandableRows
+        // expandableRowsComponent={ExpandedComponent}
+        pagination
+        selectableRows
+      />
+    </div>
   );
 };
 

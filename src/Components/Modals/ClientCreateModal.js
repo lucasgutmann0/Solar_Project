@@ -82,7 +82,7 @@ const ClientCreationModal = ({ handleClose, text }) => {
     <BackDrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        className="modal_client bg-gradient-to-tr from-slate-600 to-slate-300 items-center justify-center flex"
+        className="modal_client bg-gradient-to-tr from-teal-600 to-teal-300 items-center justify-center flex"
         variants={dropIn}
         initial="hidden"
         animate="visible"

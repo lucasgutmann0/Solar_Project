@@ -15,15 +15,21 @@ export default function Projects() {
   const open = () => setModalOpen(true);
 
   return (
-    <div className="flex flex-row h-screen w-12/12">
+    <div className="flex flex-row pr-10 lg:pr-0 h-screen">
+      {/* SideBar */}
       <div className="">
         <SideBarAnimated />
       </div>
-      <div className="ml-1 my-4 mr-4 rounded-lg bg-gradient-to-tl" style={{width: "97%"}}>
-        <div className="flex flex-row space-x-4 ">
+
+      {/* Top of the Page */}
+      <div
+        className="mx-4 my-4 rounded-lg bg-gradient-to-tl"
+        style={{ width: "94%", height: "92%" }}
+      >
+        <div className="flex flex-row space-x-4 pb-4">
           <h3 className="font-semibold text-2xl">Gestión de Proyectos</h3>
           <motion.button
-            className="px-3 py-0 flex flex-row justify-center items-center text-center font-bold bg-blue-500 text-white rounded-xl"
+            className="px-3 flex flex-row justify-center items-center text-center font-bold bg-blue-500 text-white rounded-xl"
             whileHover={{ scale: 1.1, backgroundColor: "#2563eb" }}
             whileTap={{ scale: 0.9 }}
             onClick={() => (modalOpen ? close() : open())}
@@ -32,13 +38,23 @@ export default function Projects() {
           </motion.button>
         </div>
 
-        <div className="flex flex-col xl:flex-row">
-          <div className="w-full py-5">
+        {/* Content */}
+
+        <div className="flex flex-col xl:flex-col justify-between h-full">
+          <section className="flex flex-row justify-between h-2/5 space-x-5 mb-2">
+            <div className="bg-blue-500 w-1/3 dropshadow-lg h-full rounded-md py-4 px-7">
+              <h3>Información</h3>
+            </div>
+            <div className="bg-blue-500 w-1/3 dropshadow-lg h-full rounded-md py-4 px-7">
+              <h3>Información</h3>
+            </div>
+            <div className="bg-blue-500 w-1/3 dropshadow-lg h-full rounded-md py-4 px-7">
+              <h3>Información</h3>
+            </div>
+          </section>
+          <section className="h-3/5">
             <DataTableProjects />
-          </div>
-          <div className="w-full xl:w-4/12">
-            <Map />
-          </div>
+          </section>
         </div>
       </div>
 
