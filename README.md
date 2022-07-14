@@ -12,12 +12,12 @@ Se ejecutara en el siguiente [puerto de ejercución](http://localhost:3000)
 
 Con este comando se va a apagar el contenedor y ya no estará en ejercución en segundo plano:
 ```
-`docker-compose down`
+docker-compose down
 ```
 ## Re-construir el contenedor:
 Al momento de hacer algun cambio en los archivos de instalación ya sea el package json o algun cambio grande, se va a reconstruir siguiendo las instrucciones del docker-compose y Dockerfiel que sea necesario de rehacer:
 ```
-`docker-compose build`
+docker-compose build
 ```
 
 # Instalación de docker:
