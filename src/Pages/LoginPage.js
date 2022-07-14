@@ -15,6 +15,7 @@ import eye_open from "../assets/svg/icons/eye_open.svg";
 import eye_closed from "../assets/svg/icons/eye_closed.svg";
 import password_img from "../assets/svg/icons/password.svg";
 import logo from "../assets/svg/icons/emcali_logo.svg";
+import { IoKey, IoPerson, IoSearchCircle } from "react-icons/io5";
 
 
 export default function LoginPage() {
@@ -46,7 +47,7 @@ export default function LoginPage() {
               showConfirmButton: false,
               timer: 1500,
             });
-            navigate("../dashboard", { replace: true });
+            navigate("../dashboard/home", { replace: true });
           } else {
             window.localStorage.removeItem("credentials");
             // console.log("Hubo un problema con las credenciales!");
@@ -93,7 +94,7 @@ export default function LoginPage() {
             showConfirmButton: false,
             timer: 1500,
           });
-          navigate("../dashboard", { replace: true });
+          navigate("../dashboard/home", { replace: true });
         } else {
           window.localStorage.removeItem("credentials");
           console.log("Credenciales Erroneas!");
@@ -149,11 +150,11 @@ export default function LoginPage() {
         >
           <div className="space-y-5 mb-3">
             <div className="flex flex-row w-full">
-              <div className="regist_img field_icon">
-                <img src={user_icon} />
+            <div className="bg-amber-500 items-center rounded-l-xl justify-center flex w-12 h-14 py-2" id="password_icon">
+                <IoPerson size="25" className="text-white"/>
               </div>
               <input
-                className="regist_input field_input"
+                className="login_input field_input"
                 type="text"
                 value={username}
                 required
@@ -162,8 +163,8 @@ export default function LoginPage() {
               ></input>
             </div>
             <div className="flex flex-row w-full">
-              <div className="regist_img" id="password_icon">
-                <img src={password_img} />
+              <div className="bg-amber-500 items-center rounded-l-xl justify-center flex w-12 h-14 py-2" id="password_icon">
+                <IoKey size="30" className="text-white"/>
               </div>
               <input
                 id="login_password"

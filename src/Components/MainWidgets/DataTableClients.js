@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DataTable, { createTheme } from "react-data-table-component";
 
-const DataTableProjects = () => {
+const DataTableClients = () => {
   //1 - Configurar los hooks
   const [users, setUsers] = useState([]);
 
@@ -10,7 +10,7 @@ const DataTableProjects = () => {
   );
 
   //2 - Función para mostrar los datos con fetch
-  const URL = "http://0.0.0.0:8000/project/list/";
+  const URL = "http://0.0.0.0:8000/client/list/";
   const showData = async () => {
     const response = await fetch(URL);
     const data = await response.json();
@@ -31,31 +31,19 @@ const DataTableProjects = () => {
       width: "4rem",
     },
     {
-      name: "Cliente",
-      selector: (row) => row.fk_clients,
-      sortable: true,
-      width: "15rem"
-    },
-    {
-      name: "Potencia Instalada",
-      selector: (row) => row.installed_power,
-      sortable: true,
-      width: "11rem",
-    },
-    {
-      name: "Dirección",
-      selector: (row) => row.address,
-      sortable: true,
-      width: "20rem",
-    },
-    {
-      name: "Latitude",
-      selector: (row) => row.latitude,
+      name: "name",
+      selector: (row) => row.name,
       sortable: true,
     },
     {
-      name: "Longitude",
-      selector: (row) => row.longitude,
+      name: "state",
+      selector: (row) => row.state,
+      sortable: true,
+      width: "5rem",
+    },
+    {
+      name: "Fecha de creación",
+      selector: (row) => row.creation_date,
       sortable: true,
     },
   ];
@@ -119,7 +107,7 @@ const DataTableProjects = () => {
   //4 - Mostramos la data en DataTable
   return (
     <DataTable
-      title="Proyectos"
+      title="Clientes"
       columns={columns}
       data={users}
       customStyles={customStyles}
@@ -131,4 +119,4 @@ const DataTableProjects = () => {
   );
 };
 
-export default DataTableProjects;
+export default DataTableClients;

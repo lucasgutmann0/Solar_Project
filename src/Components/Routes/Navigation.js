@@ -15,8 +15,8 @@ import PrivateRoutes from "./PrivateRoutes";
 import OtherProtectedRoutes from "./OtherProtectedRoutes";
 import Profile from "../../Pages/Profile";
 import Projects from "../../Pages/Projects";
-import Contracts from "../../Pages/Contract";
 import Inversors from "../../Pages/Inversors";
+import Clients from "../../Pages/Clients";
 
 //CLASE NAVIGATION FOR MAKE ROUTES
 export default class Navigation extends Component {
@@ -26,9 +26,9 @@ export default class Navigation extends Component {
         <Routes>
           {/* RUTAS EXCLUIDAS SI EL USUARIO NO ESTA AUTENTICADO */}
           <Route element={<PrivateRoutes />}>
-            <Route exact path="/dashboard" element={<Dashboard />} />
+            <Route exact path="/dashboard/home" element={<Dashboard />} />
             <Route exact path="/perfil" element={<Profile />} />
-            <Route exact path="/dashboard/contratos" element={<Contracts />} />
+            <Route exact path="/dashboard/clientes" element={<Clients />} />
             <Route exact path="/dashboard/proyectos" element={<Projects />} />
             <Route exact path="/dashboard/inversores" element={<Inversors />} />
           </Route>

@@ -172,7 +172,7 @@ export default function NavBar() {
                 </a>
               </li>
               <li>
-                <a href="/dashboard">
+                <a href="/dashboard/home">
                   <button className="dropdown_item">Dashboard</button>
                 </a>
               </li>

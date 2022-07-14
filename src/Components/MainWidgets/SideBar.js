@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import logo from "../../assets/svg/icons/emcali_logo.svg";
 import {
-  IoDocument,
   IoPerson,
   IoLogOut,
   IoPeopleCircle,
@@ -14,14 +13,8 @@ import Swal from "sweetalert2";
 
 export default function SideBar() {
   const navigate = useNavigate();
-  const dropDownMenu = useRef();
-  const username_dropDown = useRef();
-  const mainBtn = useRef();
-  const loginBtn = useRef();
   const id = window.localStorage.getItem("id");
   const token = window.localStorage.getItem("token");
-  const username = window.localStorage.getItem("username");
-  const email = window.localStorage.getItem("email");
 
   const logout = () => {
     try {
@@ -91,12 +84,12 @@ export default function SideBar() {
         </div>
         <div className="flex flex-col space-y-5">
           <Link to="/dashboard">
-            <SideBarIcon icon={<IoGrid size="20" />} wtext="Dashboard" />
+            <SideBarIcon icon={<IoGrid size="20" />} text="Dashboard" />
           </Link>
-          <Link to="/dashboard/contratos">
+          <Link to="/dashboard/clientes">
             <SideBarIcon
               icon={<IoPeopleCircle size="20" />}
-              text="Gestionar Contratos"
+              text="Gestionar Clientes"
             />
           </Link>
           <Link to="/dashboard/proyectos">
